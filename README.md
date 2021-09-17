@@ -42,7 +42,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. Describe the four principles of the 'this' keyword.
 
-<!--Whether the function is called by new, called as method, called in the global scope, or called by call(), apply(), or bind()-->
+<!-- Four bindings: Window ('this' has no context), Implicit ('this' to the left of the dot), Explicit ('this' directly declared using methods), and New ('this' uses a 'new' keyword) -->
 
 5. Why do we need super() in an extended class?
 
