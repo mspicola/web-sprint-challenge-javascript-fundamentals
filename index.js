@@ -18,7 +18,7 @@ myFunction();
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
 
-
+// Because nestedFunction was created in myFunction so nestedFunction will only ever be available inside of its parent (which is myFunction) and also when a function is defined in another function, an inner function has access to other inner function’s variables, which is called lexical scoping
 
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
@@ -28,11 +28,21 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+// const arrayExample = [1, 2, 3, 4];
+// const singleValue = arrayExample.reduce(function(previousValue, currentValue){
+//   return previousValue + currentValue;
+//  },0);
 
-  }
- 
+ function summation(number) {
+  let sum = 0;
+   for(let i = number; i >= 1; i--){
+      sum = i + sum;
+   }
+ return sum;
+}
+
+console.log('2:', summation(4));
+
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
